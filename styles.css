@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nanum Myeongjo', serif;
+    width:100%;
 }
 .top{
     background-color: rgba(167, 167, 104, 0.63);
@@ -62,6 +63,7 @@ a{
 img{
     width: 100%;
     max-width: 500px;
+    margin: 0 auto;
     
     border:2px solid #c3b5b5;
 }
@@ -69,29 +71,18 @@ video{
     width:450px;
 }
 @media only screen and (min-width: 64rem){
-   .historia img{
-    width: 350px;
-    float:right; 
+  div .historia{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
    }
-   .historia h2{
-    width: max-content;
+   img #abuela{
+    grid-column: 2;
    }
-   .historia{
-   
-   max-width: fit-content;
-   height: fit-content;
-   }
-   .historia p{
-   display: inline;
-   margin-top: 2rem;
-   margin-bottom: 5rem;
-   }
-   .historia ul{
-    float:left;
-   }
-   div .abuelos{
-    clear: both;
-   }
-       
-    
+    p #text_a{
+        grid-column: 1;
+    }
+    ul #vida{
+        grid-column: 3;
+    }
 }
