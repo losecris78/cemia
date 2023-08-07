@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.top{
+    background-color: rgba(167, 167, 104, 0.63);
+    padding: .8rem;
+   
+}
+h1, h2, h3{
+    font-family: 'Ysabeau SC', sans-serif;
+    color:brown;
+    text-align: center;
+}
+h2,h3{
+    padding:0.5rem;
+    margin: 10px auto;
+}
+.top h1{
+    font-size: 3rem;
+}
+.top nav ul{
+    display:flex;
+    justify-content: space-around;
+}
+.top nav ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color:rgba(176, 84, 58, 0.781);
+}
+.top nav li a:hover {
+    background-color: #c3b5b5;
+}
+.historia{
+    background-color: #6347476e;
+    padding: .3rem;
+    color:rgb(246, 255, 254);
+}
+.historia ul li{
+    list-style: circle;
+    margin-left:15px;
+    font-weight: 500;
+
+}
+.abuelos{
+    background-color: #eee; 
+    padding: .3rem;
+}
+.vamps{
+    background-color: #506fbcb1; 
+    padding: .3rem;
+}
+.niver{
+    background-color: #c4a12b; 
+    padding: .3rem;
+}
+img{
+    width: 100%;
+    max-width: 500px;
+    
+    border:2px solid #c3b5b5;
+}
+video{
+    width:450px;
+}
+@media only screen and (min-width: 64rem){
+   .historia img{
+    width: 350px;
+    float:right; 
+   }
+   .historia h2{
+    width: max-content;
+   }
+   .historia{
+   
+   max-width: fit-content;
+   height: fit-content;
+   }
+   .historia p{
+   display: inline;
+   margin-top: 2rem;
+   margin-bottom: 5rem;
+   }
+   .historia ul{
+    float:left;
+   }
+   div .abuelos{
+    clear: both;
+   }
+       
+    
+}
