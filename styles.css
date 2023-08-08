@@ -112,6 +112,7 @@ video{
     display:grid;
     grid-template-columns: repeat(1fr 4);
     grid-template-rows: auto;
+    padding:.3rem;
    }
    #gallery h2{
     grid-row: 1;
@@ -184,6 +185,11 @@ video{
    }
    iframe{
     width:450px;
+    padding: .5rem;
+    justify-content: center;
+   }
+   figcaption{
+    text-align: center;
    }
     
 }
